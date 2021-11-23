@@ -19,7 +19,8 @@ img {
 
 body {
   min-width: 1200px;
-  font-family: 'font0', sans-serif;
+  font-family: 'Muller', sans-serif;
+  background-color: #F1F1F1;
 }
 
 /*glob*/
@@ -50,6 +51,9 @@ body {
   margin: 0;
   margin-bottom: 20px;
   margin-left: 40px;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
 }
 
 section {
@@ -57,6 +61,45 @@ section {
   margin-bottom: 70px;
 }
 
+@font-face {
+  font-family: 'Muller';
+  src: local(('Muller-Regular'),
+  url('../fonts/MullerRegular.woff2') format("woff2"),
+  url('../fonts/MullerRegular.woff') format("woff"));
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local(('Muller-Light'),
+  url('../fonts/MullerLight.woff2') format("woff2"),
+  url('../fonts/MullerLight.woff') format("woff"));
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local(('Muller-Medium'),
+  url('../fonts/MullerMedium.woff2') format("woff2"),
+  url('../fonts/MullerMedium.woff') format("woff"));
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local(('Muller-Bold'),
+  url('../fonts/MullerBold.woff2') format("woff2"),
+  url('../fonts/MullerBold.woff') format("woff"));
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* header */
 .header-container {
@@ -65,32 +108,57 @@ section {
 }
 
 .header {
-  margin: 0;
   margin-bottom: 70px;
 }
 
 .header-1line {
-  justify-content: space-between;
   margin-bottom: 30px;
   margin-top: 30px;
   align-items: center;
 }
 
 .header-logo {
-  margin-right: auto;
+  margin: 0;
 }
 
 .header-tel {
   margin-left: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666666;
+}
+
+.header-account {
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
 }
 
 .header-2line {
   justify-content: space-between;
   height: 70px;
+  background-color: #FFF;
+  border-radius: 15px;
 }
 
 .header-list-item {
   margin: 27px 0 27px 45px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.rectangle {
+  margin-top: 10px;
+  width: 1px;
+  height: 50px;
+  background: #E1E1E1;
+}
+
+.header-buttons {
+ align-items: center;
 }
 
 .button {
@@ -99,6 +167,9 @@ section {
   border-radius: 10px;
   margin-top: 13px;
   margin-bottom: 13px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
 }
 
 .header-button {
@@ -112,38 +183,69 @@ section {
 }
 
 .special-item {
-  border: 1px solid #CC9933;
   width: 573px;
   border-radius: 15px;
   padding: 40px;
   flex-direction: column;
-}
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
 
 .special-item:not(:last-child) {
   margin-bottom: 23px;
 }
 
+.special-maldives {
+  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/special-maldives.png');
+}
+
+.special-hottour {
+  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/special-hottour.png');
+}
+
 .special-item-lux {
   padding-top: 211px;
+  background-image: url('../img/special-lux.png');
 }
 
 .special-item-title {
   margin: 0;
   margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+  width: 310px;
+}
+
+.special-item-title-lux {
+  font-size: 60px;
+  line-height: 60px;
 }
 
 .special-item-descr {
   margin: 0;
+  margin-bottom: 47px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
 }
 
 .special-item-link {
   margin-top: auto;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFCC66;
 }
 
 /* about */
 .about-text {
   margin: 0;
   max-width: 888px;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
 }
 
 /* services */
@@ -155,16 +257,46 @@ section {
 .services-item {
   width: 573px;
   min-height: 330px;
-  outline: 1px solid #CC9933;
-  padding: 26px 45px;
+  padding-bottom: 26px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 190px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  }
+
+.services-item-1 {
+  background-image: url('../img/services-preview1.jpg');
+}
+
+.services-item-2 {
+  background-image: url('../img/services-preview2.jpg');
+}
+
+.services-item-3 {
+  background-image: url('../img/services-preview3.jpg');
+}
+
+.services-item-4 {
+  background-image: url('../img/services-preview4.jpg');
 }
 
 .services-item-link {
   margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #CC9933;
 }
 
 .services-item-text {
   margin: 0;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
 }
 
 /* advantages */
@@ -176,12 +308,51 @@ section {
 .advantages-item {
   width: 275px;
   min-height: 275px;
-  outline: 1px solid #CC9933;
   padding: 116px 42px 41px 45px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  background-position: 40px 45px;
+  background-repeat: no-repeat;
+  background-size: 67px 67px;
+  }
+
+.advantages-item-1 {
+  background-image: url('../img/adv1.svg');
+}
+
+.advantages-item-2 {
+  background-image: url('../img/adv2.svg');
+}
+
+.advantages-item-3 {
+  background-image: url('../img/adv3.svg');
+}
+
+.advantages-item-4 {
+  background-image: url('../img/adv4.svg');
+}
+
+.advantages-item-5 {
+  background-image: url('../img/adv5.svg');
+}
+
+.advantages-item-6 {
+  background-image: url('../img/adv6.svg');
+}
+
+.advantages-item-7 {
+  background-image: url('../img/adv7.svg');
+}
+
+.advantages-item-8 {
+  background-image: url('../img/adv8.svg');
 }
 
 .advantages-descr {
   margin: 0;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
 }
 
 /* accomodation */
@@ -194,7 +365,12 @@ section {
   width: 374px;
   min-height: 440px;
   margin: 0;
-  outline: 1px solid #CC9933;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.accom-image {
+  border-radius: 15px 15px 0 0;
 }
 
 .accom-descr {
@@ -204,15 +380,24 @@ section {
 .accom-price {
   margin: 0;
   margin-right: 44px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
 }
 
 .accom-name {
   margin: 0;
   margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
 }
 
 .accom-location {
   margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
 }
 
 .accom-button {
@@ -225,5 +410,17 @@ section {
 }
 
 .accom-item-link {
- margin: auto auto 27px 54px;
+  margin: auto auto 27px 54px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #FFFFFF;
 }
+
+.accom-item-showmore {
+  background-image: url('../img/accom-showmore.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
