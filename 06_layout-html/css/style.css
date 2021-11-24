@@ -8,6 +8,46 @@ html {
   box-sizing: inherit;
 }
 
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Regular'),
+  url('../fonts/MullerRegular.woff2') format("woff2"),
+  url('../fonts/MullerRegular.woff') format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Light'),
+  url('../fonts/MullerLight.woff2') format("woff2"),
+  url('../fonts/MullerLight.woff') format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Medium'),
+  url('../fonts/MullerMedium.woff2') format("woff2"),
+  url('../fonts/MullerMedium.woff') format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Bold'),
+  url('../fonts/MullerBold.woff2') format("woff2"),
+  url('../fonts/MullerBold.woff') format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -61,46 +101,6 @@ section {
   margin-bottom: 70px;
 }
 
-@font-face {
-  font-family: 'Muller';
-  src: local(('Muller-Regular'),
-  url('../fonts/MullerRegular.woff2') format("woff2"),
-  url('../fonts/MullerRegular.woff') format("woff"));
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Muller';
-  src: local(('Muller-Light'),
-  url('../fonts/MullerLight.woff2') format("woff2"),
-  url('../fonts/MullerLight.woff') format("woff"));
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Muller';
-  src: local(('Muller-Medium'),
-  url('../fonts/MullerMedium.woff2') format("woff2"),
-  url('../fonts/MullerMedium.woff') format("woff"));
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Muller';
-  src: local(('Muller-Bold'),
-  url('../fonts/MullerBold.woff2') format("woff2"),
-  url('../fonts/MullerBold.woff') format("woff"));
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 /* header */
 .header-container {
   flex-direction: column;
@@ -143,18 +143,25 @@ section {
   border-radius: 15px;
 }
 
+.header-list {
+  border-right: 1px solid #E1E1E1;
+  margin: 10px 0px 10px 45px;
+}
+
 .header-list-item {
-  margin: 27px 0 27px 45px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   font-size: 16px;
   line-height: 16px;
   color: #666666;
 }
 
-.rectangle {
-  margin-top: 10px;
-  width: 1px;
-  height: 50px;
-  background: #E1E1E1;
+.header-list-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.header-list-item {
+  margin-right: 53px;
 }
 
 .header-buttons {
@@ -165,14 +172,12 @@ section {
   padding: 13px 20px;
   border: 1px solid #CC9933;
   border-radius: 10px;
-  margin-top: 13px;
-  margin-bottom: 13px;
   font-size: 16px;
   line-height: 16px;
   color: #CC9933;
 }
 
-.header-button {
+.header-button-item {
   margin-right: 45px;
 }
 
@@ -237,6 +242,7 @@ section {
   font-size: 16px;
   line-height: 16px;
   color: #FFCC66;
+  width: max-content;
 }
 
 /* about */
@@ -282,6 +288,10 @@ section {
 
 .services-item-4 {
   background-image: url('../img/services-preview4.jpg');
+}
+
+.services-item-title {
+  margin: 0;
 }
 
 .services-item-link {
@@ -395,6 +405,7 @@ section {
 
 .accom-location {
   margin: 0;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 16px;
   color: #999999;
@@ -402,6 +413,22 @@ section {
 
 .accom-button {
   display: inline-block;
+}
+
+.accom-price {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.from {
+  color: #999999;
+}
+
+.number {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 .price-rating-line {
