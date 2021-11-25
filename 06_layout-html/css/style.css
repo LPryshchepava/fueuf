@@ -91,6 +91,7 @@ body {
   margin: 0;
   margin-bottom: 20px;
   margin-left: 40px;
+  font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   color: #333333;
@@ -243,6 +244,12 @@ section {
   line-height: 16px;
   color: #FFCC66;
   width: max-content;
+  display: flex;
+  align-items: center;
+}
+
+.special-more-icon {
+  margin-left: 5px;
 }
 
 /* about */
@@ -300,6 +307,12 @@ section {
   font-size: 20px;
   line-height: 200%;
   color: #CC9933;
+  display: flex;
+  align-items: center;
+}
+
+.services-more-icon {
+  margin-left: 5px;
 }
 
 .services-item-text {
@@ -398,6 +411,7 @@ section {
 .accom-name {
   margin: 0;
   margin-bottom: 16px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: #000000;
@@ -442,6 +456,8 @@ section {
   font-size: 20px;
   line-height: 200%;
   color: #FFFFFF;
+  display: flex;
+  align-items: center;
 }
 
 .accom-item-showmore {
@@ -450,4 +466,6 @@ section {
   background-repeat: no-repeat;
 }
 
-
+.accom-more-icon {
+  margin-left: 5px;
+}
