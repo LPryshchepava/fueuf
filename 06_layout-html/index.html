@@ -514,9 +514,40 @@
 
       <section id="order" class="order">
         <div class="container">
+         <div class="order-section">
           <h2 class="section-title order-title">
             Хочу тур
           </h2>
+          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form flex">
+            <div class="flex form-column">
+              <p class="form-name">Город вылета</p>
+              <select class="form-select" name="city">
+                <option value="City" disabled selected>Город вылета</option>
+                <option value="Санкт-Петербург">Санкт-Петербург</option>
+              </select>
+            </div>
+            <div class="flex form-column">
+              <p class="form-name">Страна</p>
+              <select class="form-select" name="country">
+                <option value="Country" disabled selected>Страна</option>
+                <option value="Австралия">Австралия</option>
+              </select>
+            </div>
+            <div class="flex form-column">
+              <p class="form-name">Дата прибытия</p>
+              <input class="form-input form-input-date" type="date" name="date">
+            </div>
+            <div class="flex form-column">
+              <p class="form-name">Ночей</p>
+              <input class="form-input form-input-number" type="number" name="number of nights">
+            </div>
+            <div class="flex form-column">
+              <p class="form-name">Туристы</p>
+              <input class="form-input form-input-number" type="number" name="number of tourists" required>
+            </div>
+            <button class="button button-reset form-button">Найти</button>
+          </form>
+         </div>
         </div>
       </section>
 
@@ -525,12 +556,77 @@
           <h2 class="section-title contacts-title">
             Контакты
           </h2>
+          <div class="contacts-wrapper">
+          <div class="contacts-column flex">
+            <div class="contacts-line flex">
+              <span class="contacts-name">Адрес</span>
+              <div class="contacts-details">
+                Москва, улица Юности, дом 5<br>строение&nbsp;4, офис&nbsp;2
+              </div>
+            </div>
+            <div class="contacts-line flex">
+              <span class="contacts-name">Телефоны</span>
+              <div class="contacts-detailes flex">
+                <a href="tel:+74995356434" class="contact-detailes-tel">
+                  +7 (499) 535-64-34
+                </a>
+                <a href="tel:+74950050544" class="contact-detailes-tel">
+                  +7 (495) 005-05-44
+                </a>
+              </div>
+            </div>
+            <div class="contacts-line flex">
+              <span class="contacts-name">E-mail</span>
+              <div class="contacts-detailes flex">
+                <a href="mailto:lg.oona@mail.ru" class="contacts-detailes-email">lg.oona@mail.ru</a>
+                <span class="contacts-detailes-emaildescr">по вопросам бронирования</span>
+                <a href="mailto:hotels.ln@mail.ru" class="contacts-detailes-email">hotels.ln@mail.ru</a>
+                <span class="contacts-detailes-emaildescr">по вопросам сотрудничества</span>
+              </div>
+            </div>
+            <div class="contacts-line flex">
+              <span class="contacts-name">График</span>
+              <div class="contacts-details-schedule">
+                Понедельник - пятница,<br> с 10:00 до 19:00
+              </div>
+          </div>
+          <button class="button-reset button contacts-button"><nobr>Построить маршрут</nobr></button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
-
+      <div class="container">
+        <div class="footer-wrapper flex">
+          <div class="footer-left flex">
+            <span class="footer-copyright">&copy;&nbsp;2012-2020 Управляющая компания Объединенной сети &laquo;Лагуна Хотелс&raquo;<br><br>
+              Представленная на&nbsp;сайте информация носит справочный характер и&nbsp;не&nbsp;является публичной офертой</span>
+              <a href="#" class="footer-user-agr">Пользовательское соглашение</a>
+          </div>
+          <div class="footer-right flex">
+            <span class="footer-address">11710, улица Юности, дом 5 строение 4, офис 2</span>
+            <div class="footer-tel-list flex">
+              <a href="tel:+74995356434" class="footer-tel">
+                +7 (499) 535-64-34
+              </a>
+              <a href="tel:+74950050544" class="footer-tel">
+                +7 (495) 005-05-44
+              </a>
+            </div>
+            <a href="mailto:lg.oona@mail.ru" class="footer-email">lg.oona@mail.ru</a>
+            <a href="mailto:hotels.ln@mail.ru" class="footer-email">hotels.ln@mail.ru</a>
+          </div>
+          <ul class="list-reset social flex">
+            <li class="social-item"><a href="#" class="social-link social-link-1"></a></li>
+            <li class="social-item"><a href="#" class="social-link social-link-2"></a></li>
+            <li class="social-item"><a href="#" class="social-link social-link-3"></a></li>
+            <li class="social-item"><a href="#" class="social-link social-link-4"></a></li>
+            <li class="social-item"><a href="#" class="social-link social-link-5"></a></li>
+        </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
