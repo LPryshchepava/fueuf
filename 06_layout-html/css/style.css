@@ -534,15 +534,20 @@ section {
   background-color: #FFFFFF;
   border-radius: 15px;
   padding: 44px;
-  background-image: url(../img/contacts-bg.png);
-  background-position: 471px 44px;
-  background-repeat: no-repeat;
-  background-size: 653px 520px;
+  justify-content: space-between;
 }
 
 .contacts-column {
   flex-direction: column;
   width: 35%;
+}
+
+.contacts-picture {
+  width: 60%;
+  background-image: url(../img/contacts-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
 }
 
 .contacts-line {
@@ -555,16 +560,22 @@ border-bottom: 1px solid #C4C4C4;
 }
 
 .contacts-name {
+  margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   color: #000000;
   display: block;
-  width: 35%;
+  width: 145px;
 }
 
 .contacts-detailes {
   flex-direction: column;
+  width: 230px;
+}
+
+.contacts-detailes-address {
+  margin: 0;
 }
 
 .contact-detailes-tel {
@@ -580,6 +591,7 @@ border-bottom: 1px solid #C4C4C4;
 }
 
 .contacts-detailes-emaildescr {
+  margin: 0;
   font-size: 16px;
   line-height: 150%;
   color: #999999;
@@ -592,7 +604,7 @@ border-bottom: 1px solid #C4C4C4;
 }
 
 .contacts-button {
-  width: min-content;
+  width: max-content;
   padding: 27px 29px;
   margin-top: 45px;
 }
@@ -604,7 +616,7 @@ border-bottom: 1px solid #C4C4C4;
   border-radius: 15px;
   padding: 44px 52px;
   background-image: url(../img/footer-bg.svg);
-  background-position: 738px 113px;
+  background-position: 738px bottom;
   background-repeat: no-repeat;
 }
 
@@ -619,11 +631,17 @@ border-bottom: 1px solid #C4C4C4;
   flex-direction: column;
 }
 
-.footer-copyright {
+.footer-copyright,
+.footer-disclaimer {
+  margin: 0;
   font-size: 16px;
   line-height: 190%;
   color: #FFFFFF;
   margin-bottom: 49px;
+}
+
+.footer-copyright {
+  margin-bottom: 30px;
 }
 
 .footer-user-agr {
@@ -633,15 +651,21 @@ border-bottom: 1px solid #C4C4C4;
 }
 
 .footer-address {
+  margin: 0;
   font-size: 16px;
   line-height: 16px;
   color: #FFFFFF;
-  margin-bottom: 14px;
+  margin-top: 8px;
+  margin-bottom: 10px;
 }
 
 .footer-tel-list {
   flex-direction: column;
   margin-bottom: 15px;
+}
+
+.footer-email-list {
+  flex-direction: column;
 }
 
 .footer-tel {
@@ -663,6 +687,10 @@ border-bottom: 1px solid #C4C4C4;
   margin-left: auto;
 }
 
+.social-item {
+  margin-bottom: 20px;
+}
+
 .social-link {
   display: block;
   width: 25px;
@@ -670,7 +698,6 @@ border-bottom: 1px solid #C4C4C4;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  margin-bottom: 20px;
 }
 
 .social-link-1 {
