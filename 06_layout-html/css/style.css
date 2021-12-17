@@ -199,7 +199,7 @@ section {
   color: var(--main-color-dark);
 }
 
-.haeder-account-icon path {
+.header-account-icon path {
   transition: fill .2s linear;
 }
 
@@ -328,6 +328,16 @@ section {
   width: max-content;
   display: flex;
   align-items: center;
+  transition: color .1s linear;
+}
+
+.special-item-link:hover .special-more-icon {
+  margin-left: 10px;
+}
+
+.special-item-link:active {
+  color: white;
+  outline: none;
 }
 
 .special-more-icon {
@@ -391,6 +401,34 @@ section {
   color: var(--main-color);
   display: flex;
   align-items: center;
+  width: max-content;
+  transition: stroke .1s linear;
+}
+
+.services-item-link:hover {
+  color: var(--main-color-light);
+}
+
+.services-more-icon path {
+  stroke: var(--main-color);
+  transition: stroke .1s linear;
+}
+
+.services-item-link:hover .services-more-icon path{
+  stroke: var(--main-color-light);
+}
+
+.services-item-link:hover .services-more-icon {
+  margin-left: 10px;
+}
+
+.services-item-link:active {
+  color: var(--main-color-dark);
+  outline: none;
+}
+
+.services-item-link:active .services-more-icon path {
+  stroke: var(--main-color-dark);
 }
 
 .services-more-icon {
@@ -577,7 +615,7 @@ section {
 }
 
 .form {
-  background-color: #FFF;
+  background-color: #FFFFFF;
   border-radius: 15px;
   width: 1080px;
   height: 106px;
@@ -680,12 +718,34 @@ border-bottom: 1px solid #C4C4C4;
   font-size: 16px;
   line-height: 150%;
   color: var(--main-color);
+  width: max-content;
+  transition: color .1s linear;
+}
+
+.contact-detailes-tel:hover {
+  color: var(--main-color-light);
+}
+
+.contact-detailes-tel:active {
+  color: var(--main-color-dark);
+  outline: none;
 }
 
 .contacts-detailes-email {
   font-size: 16px;
   line-height: 150%;
   color: var(--main-color);
+  width: max-content;
+  transition: color .1s linear;
+}
+
+.contacts-detailes-email:hover {
+  color: var(--main-color-light);
+}
+
+.contacts-detailes-email:active {
+  color: var(--main-color-dark);
+  outline: none;
 }
 
 .contacts-detailes-emaildescr {
@@ -746,6 +806,17 @@ border-bottom: 1px solid #C4C4C4;
   font-size: 16px;
   line-height: 150%;
   color: var(--main-color);
+  width: max-content;
+  transition: color .1s linear;
+}
+
+.footer-user-agr:hover {
+  color: var(--main-color-light);
+}
+
+.footer-user-agr:active {
+  color: var(--main-color-dark);
+  outline: none;
 }
 
 .footer-address {
@@ -819,6 +890,10 @@ border-bottom: 1px solid #C4C4C4;
   transition: fill .2s ease;
 }
 
+.social-link:focus {
+  outline: none;
+}
+
 .social-link:focus path {
   fill: var(--main-color);
   outline: none;
@@ -830,4 +905,5 @@ border-bottom: 1px solid #C4C4C4;
 
 .social-link:active path{
   fill: var(--main-color-dark);
+  outline: none;
 }
