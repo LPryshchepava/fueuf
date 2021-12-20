@@ -279,6 +279,15 @@ section {
   background-repeat: no-repeat;
   }
 
+.special-item:focus-within {
+  outline: 1px solid var(--main-color);
+  outline-offset: 5px;
+}
+
+.special-item:focus-within a {
+  outline: none;
+}
+
 .special-item:not(:last-child) {
   margin-bottom: 23px;
 }
@@ -403,6 +412,15 @@ section {
   align-items: center;
   width: max-content;
   transition: stroke .1s linear;
+}
+
+.services-item:focus-within {
+  outline: 1px solid var(--main-color);
+  outline-offset: 5px;
+}
+
+.services-item:focus-within a {
+  outline: none;
 }
 
 .services-item-link:hover {
